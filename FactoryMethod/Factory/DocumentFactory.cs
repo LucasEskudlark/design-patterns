@@ -12,11 +12,11 @@ public class DocumentFactory : IDocumentFactory
         _serviceProvider = serviceProvider;
     }
 
-    public IDocument CreateDocument(DocumentType documentType)
+    public Document CreateDocument(DocumentType documentType)
     {
         if (_documentTypes.TryGetValue(documentType, out var type))
         {
-            if (_serviceProvider.GetService(type) is IDocument document)
+            if (_serviceProvider.GetService(type) is Document document)
             {
                 return document;
             }

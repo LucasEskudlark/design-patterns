@@ -4,5 +4,5 @@ namespace FactoryMethod.Factory;
 
 public interface IDocumentFactory
 {
-    IDocument CreateDocument(DocumentType documentType);
+    Document CreateDocument(DocumentType documentType);
 }

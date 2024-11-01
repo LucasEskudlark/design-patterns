@@ -1,18 +1,19 @@
 ﻿namespace FactoryMethod.Models;
 
-public class DocxDocument : IDocument
+public class DocxDocument : Document
 {
-    public void Open()
+    public override void Open()
     {
+        LogMessage();
         Console.WriteLine("Opening Docx document...");
     }
 
-    public void Close()
+    public override void Close()
     {
         Console.WriteLine("Closing Docx document...");
     }
 
-    public void Save()
+    public override void Save()
     {
         Console.WriteLine("Saving Docx document...");
     }

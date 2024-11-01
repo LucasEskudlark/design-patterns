@@ -1,18 +1,19 @@
 ﻿namespace FactoryMethod.Models;
 
-public class PdfDocument : IDocument
+public class PdfDocument : Document
 {
-    public void Open()
+    public override void Open()
     {
+        LogMessage();
         Console.WriteLine("Opening PDF document...");
     }
 
-    public void Close()
+    public override void Close()
     {
         Console.WriteLine("Closing PDF document...");
     }
 
-    public void Save()
+    public override void Save()
     {
         Console.WriteLine("Saving PDF document...");
     }
