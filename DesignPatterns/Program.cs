@@ -1,4 +1,5 @@
 using FactoryMethod.Extensions;
+using AbstractFactory.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.ConfigureFactoryMethod();
+builder.Services.ConfigureAbstractFactory();
 
 var app = builder.Build();
 
