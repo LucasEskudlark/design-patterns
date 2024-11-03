@@ -1,18 +1,18 @@
-using FactoryMethod.Extensions;
 using AbstractFactory.Extensions;
+using Builder.Extensions;
+using DesignPatterns.Extensions;
+using FactoryMethod.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options => options.JsonSerializerOptions.ConfigureJson());
 
 builder.Services.ConfigureFactoryMethod();
 builder.Services.ConfigureAbstractFactory();
+builder.Services.ConfigureBuilderPattern();
 
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
 
