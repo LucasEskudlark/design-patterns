@@ -11,6 +11,7 @@
     <ProjectReference Include="..\Builder\Builder.csproj" />
     <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj" />
     <ProjectReference Include="..\Strategy\Strategy.csproj" />
+    <ProjectReference Include="..\TemplateMethod\TemplateMethod.csproj" />
   </ItemGroup>
 
 </Project>
