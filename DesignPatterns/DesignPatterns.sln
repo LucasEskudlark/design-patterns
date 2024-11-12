@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "..\Abstr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "..\Builder\Builder.csproj", "{DE093523-EB27-4529-9A18-E35A44A34B6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "..\Strategy\Strategy.csproj", "{9116897A-AF5C-4030-A813-A7DCBAE35F59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "..\Strategy\Strategy.csproj", "{9116897A-AF5C-4030-A813-A7DCBAE35F59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "..\TemplateMethod\TemplateMethod.csproj", "{8A006FFE-6C90-48EB-98DC-2CE93E71E462}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{9116897A-AF5C-4030-A813-A7DCBAE35F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9116897A-AF5C-4030-A813-A7DCBAE35F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9116897A-AF5C-4030-A813-A7DCBAE35F59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A006FFE-6C90-48EB-98DC-2CE93E71E462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A006FFE-6C90-48EB-98DC-2CE93E71E462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A006FFE-6C90-48EB-98DC-2CE93E71E462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A006FFE-6C90-48EB-98DC-2CE93E71E462}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
